@@ -1,4 +1,10 @@
-/* Reset margins and paddings*/
+
+:root{
+    --font-family: arial;
+    --text-color: rgb(73, 73, 73);
+    --primary-color: rgb(255, 22, 22);
+}
+
 *,
 *::before,
 *::after {
@@ -14,29 +20,76 @@ a {
 }
 
 a:hover {
-    color: #ff1616;
+    color: var(--primary-color);
 }
 
-ul, li {
-    list-style: none;
-    padding: 5px;
+ul {
+    list-style: square;
+    padding: 10px 75px;
     margin: 0;
 }
 
+
+h2 {
+    font-weight: 400;
+    font-size: 2.2rem;
+    padding-bottom: 25px;
+}
+
 main {
-    max-width: 80%;
+    max-width: 75%;
     text-align: justify;
     margin: auto;
+    color: var(--text-color);
+    font-family: var(--font-family), sans-serif;
+    line-height: 1.5;
+}
+
+.footer-pagina{
+    padding: 4rem 0 3rem 0;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: var(--font-family), sans-serif;
+    font-size: 0.7rem;
 }
 
 section {
     margin-bottom: 20px;
 }
 
+.contenedor-video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px;
+    max-width: 100%;
+}
+
+.contenedor-video iframe {
+    width: 100%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+}
+
+.figcaption-video {
+    width: 100%;
+    max-width: 800px;
+    text-align: right;
+    font-size: 0.6rem;
+    margin-top: 10px;
+}
+
+
+
 .principal{
     margin: 20px auto;
     text-align: end;
     max-width: 100%;
+}
+
+.principal figcaption{
+    font-size: 0.6rem;
 }
 
 .principal_image {
@@ -53,21 +106,58 @@ section {
 }
 
 .menu-links {
+    list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     padding-bottom: 25px;
+    line-height: 1.5;
 }
 
 .menu-links a {
-    font-family: Arial, sans-serif;
+    font-family: var(--font-family), sans-serif;
     font-weight: 400;
     font-size: 16px;
 }
 
 .title {
-    font-weight: 800;
-    font-size: 1.9rem;
+    width: 100%;
+    font-weight: 500;
+    font-size: 2.7rem;
     margin: 0.75rem;
+}
+
+.articulo-links{
+    color: var(--primary-color);
+}
+
+.articulo-links:hover {
+    text-decoration: underline;
+}
+
+.footer-autora {
+    margin: 2rem auto;
+    width: 69%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.7rem;
+}
+
+.footer-autora img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.final{
+    text-align: center;
+    font-size: 0.7rem;
+    background-color: #efefef;
+}
+
+.final i{
+    font-family: Georgia, serif;
 }
