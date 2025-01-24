@@ -22,6 +22,7 @@
     font-size: 2.7rem;
     margin: 0.75rem;
     font-family: var(--primary-font-family), sans-serif;
+    text-align: center;
 }
 
 a {
@@ -168,9 +169,6 @@ section {
     font-family: var(--primary-font-family), sans-serif;
 }
 
-.tipos h1 {
-    text-align: center;
-}
 
 .cita {
     background-color: #efefef;
@@ -182,11 +180,21 @@ section {
 
 .lista-iconos{
     list-style-image: url('../img/icon-robot.png');
-    padding:0 25px;
+    padding:0 0 0 25px;
 }
 
-.lista-iconos li {
+.lista-iconos > li {
     font-size: 17px;
+    padding-bottom: 15px;
+}
+
+.li-clasificacion{
+    padding: 0 50px;
+}
+
+.li-industria{
+    padding: 0 50px;
+    list-style: disc;
 }
 
 /* Footer pagina*/
