@@ -16,6 +16,13 @@
 
 /* Estilos comunes */
 
+main{
+    margin: auto;
+    color: var(--text-color);
+    font-family: var(--primary-font-family), sans-serif;
+    line-height: 1.5;
+}
+
 .title {
     width: 100%;
     font-weight: 500;
@@ -28,7 +35,6 @@
 a {
     color: white;
     text-decoration: none;
-    background-color: transparent;
 }
 
 a:hover {
@@ -47,6 +53,16 @@ h2 {
     font-size: 2.2rem;
     padding-bottom: 25px;
 }
+
+h3{
+    font-size: 1.7rem;
+    font-weight: 200;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
 
 
 /* Cabecera */
@@ -74,17 +90,10 @@ h2 {
 
 /* Contenido main*/
 
-.index {
+.index, .ficcion{
     max-width: 75%;
     text-align: justify;
-    margin: auto;
-    color: var(--text-color);
-    font-family: var(--primary-font-family), sans-serif;
-    line-height: 1.5;
-}
-
-section {
-    margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .contenedor-video {
@@ -163,12 +172,8 @@ section {
 
 .tipos {
     width: 37%;
-    margin: auto;
-    color: var(--text-color);
-    line-height: 1.5;
-    font-family: var(--primary-font-family), sans-serif;
-}
 
+}
 
 .cita {
     background-color: #efefef;
@@ -195,6 +200,18 @@ section {
 .li-industria{
     padding: 0 50px;
     list-style: disc;
+}
+
+/* robots ficcion*/
+
+.ficcion figure {
+    text-align: center;
+    margin: 15px;
+}
+
+.ficcion figcaption{
+    color: var(--primary-color);
+    margin: 15px;
 }
 
 /* Footer pagina*/
