@@ -74,7 +74,7 @@ section {
     align-items: center;
 }
 
-.menu-links {
+.menu_links {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -83,9 +83,18 @@ section {
     line-height: 1.5;
 }
 
-.menu-links a {
+.menu_links a {
     font-family: var(--primary-font-family), sans-serif;
     font-size: 16px;
+}
+
+
+.links{
+    color: var(--primary-color);
+}
+
+.links:hover {
+    text-decoration: underline;
 }
 
 /* Contenido main*/
@@ -96,7 +105,7 @@ section {
     font-weight: 300;
 }
 
-.contenedor-video {
+.contenedor_video {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -104,13 +113,13 @@ section {
     max-width: 100%;
 }
 
-.contenedor-video iframe {
+.contenedor_video iframe {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
 }
 
-.figcaption-video {
+.contenedor_video figcaption {
     width: 100%;
     max-width: 800px;
     text-align: right;
@@ -118,30 +127,22 @@ section {
     margin-top: 10px;
 }
 
-.figure-principal{
+.figure_principal{
     margin: 20px auto;
     text-align: end;
     max-width: 100%;
 }
 
-.figure-principal figcaption{
+.figure_principal figcaption{
     font-size: 0.6rem;
 }
 
-.imagen-principal {
+.figure_principal-img {
     width: 100%;
     height: auto;
 }
 
-.articulo-links{
-    color: var(--primary-color);
-}
-
-.articulo-links:hover {
-    text-decoration: underline;
-}
-
-.footer-autora {
+.footer_autora {
     margin: 2rem auto;
     width: 69%;
     display: flex;
@@ -150,7 +151,7 @@ section {
     font-size: 0.7rem;
 }
 
-.footer-autora img {
+.footer_autora img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -158,13 +159,13 @@ section {
     margin: 10px auto;
 }
 
-.fin-articulo{
+.fin_articulo{
     text-align: center;
     font-size: 0.7rem;
     background-color: #efefef;
 }
 
-.font-georgia{
+.font_georgia{
     font-family: var(--secundary-font-family), serif;
 }
 
@@ -183,21 +184,21 @@ section {
     font-family: var(--secundary-font-family), serif;
 }
 
-.lista-iconos{
+.lista_iconos{
     list-style-image: url('../img/icon-robot.png');
     padding:0 0 0 25px;
 }
 
-.lista-iconos > li {
+.lista_iconos > li {
     font-size: 17px;
     padding-bottom: 15px;
 }
 
-.li-clasificacion{
+.li_clasificacion{
     padding: 0 50px;
 }
 
-.li-industria{
+.li_industria{
     padding: 0 50px;
     list-style: disc;
 }
@@ -216,11 +217,32 @@ section {
 
 /* Footer pagina*/
 
-.footer-pagina{
+.footer_pagina{
     padding: 4rem 0 3rem 0;
     background-color: black;
     color: white;
     text-align: center;
     font-family: var(--primary-font-family), sans-serif;
     font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    ul {
+        padding: 10px 20px;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+    .title {
+        font-size: 2rem;
+        margin: 0.5rem;
+    }
+    .tipos {
+        width: 90%;
+    }
+
+    .ficcion img {
+        width: 100%;
+    }
 }
