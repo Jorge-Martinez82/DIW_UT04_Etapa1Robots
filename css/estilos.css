@@ -63,7 +63,17 @@ section {
     margin-bottom: 20px;
 }
 
+.links{
+    color: var(--primary-color);
+}
 
+.links:hover {
+    text-decoration: underline;
+}
+
+.font_georgia{
+    font-family: var(--secundary-font-family), serif;
+}
 
 /* Cabecera */
 .menu {
@@ -89,15 +99,8 @@ section {
 }
 
 
-.links{
-    color: var(--primary-color);
-}
 
-.links:hover {
-    text-decoration: underline;
-}
-
-/* Contenido main*/
+/* Contenido index*/
 
 .index, .ficcion{
     max-width: 75%;
@@ -163,10 +166,6 @@ section {
     text-align: center;
     font-size: 0.7rem;
     background-color: #efefef;
-}
-
-.font_georgia{
-    font-family: var(--secundary-font-family), serif;
 }
 
 /* Tipos de robots*/
