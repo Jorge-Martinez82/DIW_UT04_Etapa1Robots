@@ -32,14 +32,7 @@ main{
     text-align: center;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
 
-a:hover {
-    color: var(--primary-color);
-}
 
 ul {
     list-style: square;
@@ -76,7 +69,8 @@ section {
 }
 
 /* Cabecera */
-.menu {
+
+.nav {
     background: #000;
     display: flex;
     flex-direction: column;
@@ -84,7 +78,7 @@ section {
     align-items: center;
 }
 
-.menu_links {
+.nav__links {
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -93,11 +87,21 @@ section {
     line-height: 1.5;
 }
 
-.menu_links a {
+.nav__link {
     font-family: var(--primary-font-family), sans-serif;
     font-size: 16px;
+    color: white;
+    text-decoration: none;
 }
 
+.nav__link:hover {
+    color: var(--primary-color);
+}
+
+.nav__link--activo {
+    font-weight: bold;
+    font-style: italic;
+}
 
 
 /* Contenido index*/
@@ -108,7 +112,7 @@ section {
     font-weight: 300;
 }
 
-.contenedor_video {
+.contenedor__video {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -116,13 +120,13 @@ section {
     max-width: 100%;
 }
 
-.contenedor_video iframe {
+.contenedor__video iframe {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
 }
 
-.contenedor_video figcaption {
+.contenedor__video figcaption {
     width: 100%;
     max-width: 800px;
     text-align: right;
@@ -130,22 +134,22 @@ section {
     margin-top: 10px;
 }
 
-.figure_principal{
+.figure__principal{
     margin: 20px auto;
-    text-align: end;
+    text-align: right;
     max-width: 100%;
 }
 
-.figure_principal figcaption{
+.figure__principal figcaption{
     font-size: 0.6rem;
 }
 
-.figure_principal-img {
+.figure__principal-img {
     width: 100%;
     height: auto;
 }
 
-.footer_autora {
+.footer__autora {
     margin: 2rem auto;
     width: 69%;
     display: flex;
@@ -154,7 +158,7 @@ section {
     font-size: 0.7rem;
 }
 
-.footer_autora img {
+.footer__autora img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -162,7 +166,7 @@ section {
     margin: 10px auto;
 }
 
-.fin_articulo{
+.fin__articulo{
     text-align: center;
     font-size: 0.7rem;
     background-color: #efefef;
@@ -183,21 +187,21 @@ section {
     font-family: var(--secundary-font-family), serif;
 }
 
-.lista_iconos{
+.lista__iconos{
     list-style-image: url('../img/icon-robot.png');
     padding:0 0 0 25px;
 }
 
-.lista_iconos > li {
+.lista__iconos > li {
     font-size: 17px;
     padding-bottom: 15px;
 }
 
-.li_clasificacion{
+.lista__clasificacion{
     padding: 0 50px;
 }
 
-.li_industria{
+.lista__industria{
     padding: 0 50px;
     list-style: disc;
 }
@@ -216,7 +220,7 @@ section {
 
 /* Footer pagina*/
 
-.footer_pagina{
+.footer__pagina{
     padding: 4rem 0 3rem 0;
     background-color: black;
     color: white;
