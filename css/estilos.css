@@ -56,7 +56,7 @@ section {
 
 .links{
     color: var(--primary-color);
-}
+    text-decoration: none;}
 
 .links:hover {
     text-decoration: underline;
