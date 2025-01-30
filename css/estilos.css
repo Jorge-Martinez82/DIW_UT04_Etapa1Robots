@@ -1,4 +1,4 @@
-
+/* Declaracion de variables */
 :root{
     --primary-font-family: arial;
     --secundary-font-family: Georgia;
@@ -6,6 +6,7 @@
     --primary-color: rgb(181, 18, 18);
 }
 
+/* Reseteo de margins y paddings */
 *,
 *::before,
 *::after {
@@ -15,7 +16,6 @@
 }
 
 /* Estilos comunes */
-
 main{
     margin: auto;
     color: var(--text-color);
@@ -31,8 +31,6 @@ main{
     font-family: var(--primary-font-family), sans-serif;
     text-align: center;
 }
-
-
 
 ul {
     list-style: square;
@@ -68,7 +66,7 @@ section {
     font-family: var(--secundary-font-family), serif;
 }
 
-/* Cabecera */
+/* Cabecera y menu de navegacion */
 
 .nav {
     background: #000;
@@ -172,7 +170,7 @@ section {
     background-color: #efefef;
 }
 
-/* Tipos de robots*/
+/* contenido Tipos de robots*/
 
 .tipos {
     width: 37%;
@@ -206,7 +204,7 @@ section {
     list-style: disc;
 }
 
-/* robots ficcion*/
+/* Contenido robots ficcion*/
 
 .ficcion figure {
     text-align: center;
@@ -229,16 +227,23 @@ section {
     font-size: 0.7rem;
 }
 
+/* Responsive: titulos y subtitulo mas pequeños,
+ paddings en listas menores y ajustar ancho*/
 @media (max-width: 768px) {
     ul {
         padding: 10px 20px;
     }
 
     h2{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
     .title {
-        font-size: 2rem;
+        font-size: 1.6rem;
         margin: 0.5rem;
     }
     .tipos {
